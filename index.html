@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FightProTaekwondo — perlengkapan taekwondo untuk beginner hingga champion." />
+  <title>FightProTaekwondo — From Beginner to Champion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">
+    <span>🔥</span> FREE BELT — untuk pembelian tertentu. <a href="#promo">Lihat promo</a>
+  </div>
+
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="FightProTaekwondo home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span class="brand-copy"><strong>FIGHTPRO</strong><small>TAEKWONDO</small></span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#products">Produk</a>
+      <a href="#categories">Kategori</a>
+      <a href="#size">Ukuran</a>
+      <a href="#articles">Artikel</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="langBtn" title="Ganti bahasa">ID</button>
+      <button class="icon-btn" id="wishlistBtn" title="Wishlist">♡<span class="counter" id="wishCount">0</span></button>
+      <button class="icon-btn cart-trigger" id="cartBtn" title="Keranjang">🛒<span class="counter" id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> TAEKWONDO EQUIPMENT STORE</div>
+        <h1>FROM<br><em>BEGINNER</em><br>TO CHAMPION.</h1>
+        <p>Perlengkapan taekwondo lengkap untuk latihan, sparring, hingga hari pertandingan.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#products">Belanja Sekarang <span>↗</span></a>
+          <a class="btn btn-outline" href="#categories">Lihat Katalog</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>250+</strong><span>Produk</span></div>
+          <div><strong>4.9/5</strong><span>Rating</span></div>
+          <div><strong>1.2K+</strong><span>Atlet Dilayani</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="tag">ATHLETE'S PICK</span>
+        <div class="hero-product-art">🥋</div>
+        <div>
+          <small>Featured gear</small>
+          <strong>Dobok Pro Elite</strong>
+          <span>Lightweight • Competition Ready</span>
+        </div>
+        <a href="#products">Explore →</a>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>✓ Quality Checked</span><span>✓ Fast Shipping</span><span>✓ Secure Payment</span><span>✓ Athlete Friendly</span>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-head">
+        <div><span class="kicker">01 / FEATURED</span><h2>Gear <em>unggulan</em></h2></div>
+        <div class="slider-controls">
+          <button id="prevSlide">←</button><span id="slideIndicator">01 / 06</span><button id="nextSlide">→</button>
+        </div>
+      </div>
+
+      <div class="featured-slider" id="featuredSlider">
+        <article class="feature-slide active">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Dobok-_ITF.jpg" alt="Dobok taekwondo">
+          <div class="slide-overlay"><span>01</span><h3>Dobok</h3><p>Seragam latihan ringan dan nyaman.</p></div>
+        </article>
+        <article class="feature-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taekwondo_black_belt.jpg?width=1600" alt="Sabuk taekwondo">
+          <div class="slide-overlay"><span>02</span><h3>Taekwondo Belt</h3><p>Lengkapi perjalanan belt kamu.</p></div>
+        </article>
+        <article class="feature-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Proteccionestkd.JPG?width=1200" alt="Body protector taekwondo">
+          <div class="slide-overlay"><span>03</span><h3>Body Protector</h3><p>Proteksi untuk latihan sparring.</p></div>
+        </article>
+        <article class="feature-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/ITF_Taekwondo_Sparring_Gear.jpg?width=1200" alt="Head guard dan sparring gear">
+          <div class="slide-overlay"><span>04</span><h3>Head Guard</h3><p>Perlindungan kepala untuk sesi intens.</p></div>
+        </article>
+        <article class="feature-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Foot_protectors.jpg?width=1200" alt="Foot protector">
+          <div class="slide-overlay"><span>05</span><h3>Foot Protector</h3><p>Perlengkapan kaki untuk sparring.</p></div>
+        </article>
+        <article class="feature-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bop-bag_punching_target.JPG?width=1200" alt="Kicking target">
+          <div class="slide-overlay"><span>06</span><h3>Kicking Target</h3><p>Target latihan untuk meningkatkan akurasi.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <div><span class="kicker">02 / SHOP BY CATEGORY</span><h2>Find your <em>gear</em></h2></div>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Dobok"><span>🥋</span><strong>Dobok</strong><small>Training & competition</small></button>
+        <button class="category-card" data-category="Sabuk"><span>🟨</span><strong>Sabuk</strong><small>All belt levels</small></button>
+        <button class="category-card" data-category="Pelindung"><span>🛡️</span><strong>Pelindung</strong><small>Head • body • shin</small></button>
+        <button class="category-card" data-category="Sepatu"><span>👟</span><strong>Sepatu</strong><small>Lightweight movement</small></button>
+        <button class="category-card" data-category="Target"><span>🎯</span><strong>Target Tendangan</strong><small>Kick & speed drills</small></button>
+        <button class="category-card" data-category="Tas"><span>🎒</span><strong>Tas Peralatan</strong><small>Carry your fight kit</small></button>
+        <button class="category-card" data-category="Aksesoris"><span>🏅</span><strong>Aksesoris</strong><small>Small essentials</small></button>
+      </div>
+    </section>
+
+    <section class="shop section" id="products">
+      <div class="section-head products-head">
+        <div><span class="kicker">03 / BEST SELLERS</span><h2>Top <em>fighters</em></h2></div>
+        <div class="shop-search">
+          <span>⌕</span><input id="searchInput" type="search" placeholder="Cari produk..." />
+        </div>
+      </div>
+
+      <div class="filters">
+        <select id="priceFilter"><option value="all">Semua Harga</option><option value="0-250000">≤ Rp250K</option><option value="250000-500000">Rp250K–500K</option><option value="500000-1000000">Rp500K–1JT</option><option value="1000000-99999999">≥ Rp1JT</option></select>
+        <select id="sizeFilter"><option value="all">Semua Ukuran</option><option>120</option><option>130</option><option>140</option><option>150</option><option>160</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        <select id="colorFilter"><option value="all">Semua Warna</option><option>Putih</option><option>Hitam</option><option>Merah</option><option>Biru</option></select>
+        <select id="brandFilter"><option value="all">Semua Merek</option><option>FightPro</option><option>Daedo</option><option>KWON</option><option>Adidas</option></select>
+        <button id="resetFilters">Reset</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><strong>Produk tidak ditemukan.</strong><span>Coba kata kunci atau filter lain.</span></div>
+    </section>
+
+    <section class="promo section" id="promo">
+      <div class="promo-main">
+        <span class="kicker">LIMITED DEAL</span>
+        <h2>Train hard.<br><em>Save harder.</em></h2>
+        <p>Upgrade gear kamu sebelum sesi latihan berikutnya.</p>
+        <a class="btn btn-light" href="#products">Shop deals →</a>
+      </div>
+      <div class="promo-cards">
+        <div><span>🔥</span><strong>20% OFF</strong><small>Dobok Pemula</small></div>
+        <div><span>🎉</span><strong>PAKET HEMAT</strong><small>Set Pelindung</small></div>
+        <div><span>🎁</span><strong>FREE BELT</strong><small>Min. pembelian tertentu</small></div>
+      </div>
+    </section>
+
+    <section class="section size-section" id="size">
+      <div class="section-head"><div><span class="kicker">04 / SIZE GUIDE</span><h2>Find your <em>fit</em></h2></div></div>
+      <div class="size-layout">
+        <div class="size-copy"><div class="size-icon">📏</div><h3>Dobok Size Guide</h3><p>Pilih ukuran berdasarkan tinggi badan. Jika berada di antara dua ukuran, pertimbangkan ukuran yang lebih besar untuk ruang gerak.</p><div class="tip">TIP: Ukur tinggi tanpa sepatu.</div></div>
+        <div class="table-wrap"><table><thead><tr><th>Tinggi Badan</th><th>Ukuran Dobok</th></tr></thead><tbody><tr><td>120–130 cm</td><td>130</td></tr><tr><td>130–140 cm</td><td>140</td></tr><tr><td>140–150 cm</td><td>150</td></tr><tr><td>150–160 cm</td><td>160</td></tr><tr><td>160–170 cm</td><td>S</td></tr><tr><td>170–180 cm</td><td>M</td></tr><tr><td>180–190 cm</td><td>L</td></tr><tr><td>190+ cm</td><td>XL</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-head"><div><span class="kicker">05 / ATHLETE VOICES</span><h2>They <em>fight</em> with us</h2></div></div>
+      <div class="testimonial-grid">
+        <article><div class="stars">★★★★★</div><p>“Wah doboknya sangat nyaman, jahitannya juga rapi. Dipakai latihan lama tetap enak.”</p><strong>— Raka, Atlet Junior</strong></article>
+        <article><div class="stars">★★★★★</div><p>“Bodynya kuat, nggak gampang letoy. Buat sparring latihan terasa lebih aman.”</p><strong>— Naya, Taekwondo Club</strong></article>
+        <article><div class="stars">★★★★★</div><p>“Headguardnya nyaman dan nggak bikin pusing. Best banget deh!”</p><strong>— Dimas, Beginner</strong></article>
+      </div>
+    </section>
+
+    <section class="section articles" id="articles">
+      <div class="section-head"><div><span class="kicker">06 / FIGHTER JOURNAL</span><h2>Train <em>smarter</em></h2></div><a class="text-link" href="#">View all →</a></div>
+      <div class="article-grid">
+        <article><div class="article-img a1">🥋</div><span>GEAR GUIDE</span><h3>Cara memilih dobok yang nyaman untuk latihan</h3><a href="#">Baca artikel →</a></article>
+        <article><div class="article-img a2">🥇</div><span>TAEKWONDO BASICS</span><h3>Perbedaan sabuk taekwondo dan progresinya</h3><a href="#">Baca artikel →</a></article>
+        <article><div class="article-img a3">🛡️</div><span>CARE TIPS</span><h3>Tips merawat pelindung agar tetap awet</h3><a href="#">Baca artikel →</a></article>
+        <article><div class="article-img a4">⚡</div><span>BEGINNER</span><h3>Peralatan wajib atlet taekwondo pemula</h3><a href="#">Baca artikel →</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">F<span>+</span></span><span class="brand-copy"><strong>FIGHTPRO</strong><small>TAEKWONDO</small></span></a><p>Built for the grind. Ready for the fight.</p><div class="socials"><a href="#">IG</a><a href="#">TT</a><a href="#">WA</a></div></div>
+      <div><h4>SHOP</h4><a href="#products">Semua Produk</a><a href="#categories">Kategori</a><a href="#promo">Promo</a><a href="#size">Size Guide</a></div>
+      <div><h4>HELP</h4><a href="#articles">Artikel</a><a href="#" id="trackingLink">Tracking Pesanan</a><a href="#" id="waLink">Chat WhatsApp</a><a href="#">FAQ</a></div>
+      <div><h4>CONTACT</h4><p>WhatsApp: <a href="tel:+6285814568534">+62 858-1456-8534</a></p><p>Lokasi: Indonesia</p><p>Senin–Sabtu · 09.00–18.00</p></div>
+    </div>
+    <div class="payment-row"><span>PAYMENT</span><b>QRIS</b><b>Transfer</b><b>E-Wallet</b><span class="ship">SHIPPING</span><b>JNE</b><b>J&T</b><b>SiCepat</b></div>
+    <div class="footer-bottom"><span>© 2026 FightProTaekwondo. Demo storefront.</span><span>Made for athletes.</span></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head"><h3>Keranjang</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div><span>Total</span><strong id="cartTotal">Rp0</strong></div><button class="btn btn-primary" id="checkoutBtn">Checkout via WhatsApp</button></div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-box"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div>
+  </div>
+
+  <button class="floating-wa" id="floatingWa" title="Chat WhatsApp">☏<span>Chat</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
